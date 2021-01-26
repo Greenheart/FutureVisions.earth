@@ -44,7 +44,7 @@ const About = () => (
             <PrimaryCTA />
         </Center>
         <Center>
-            <NextLink href="/">
+            <NextLink href="/" passHref>
                 <Link variant="white" py="4">
                     Läs mer
                 </Link>
