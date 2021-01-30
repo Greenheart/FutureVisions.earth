@@ -1,7 +1,6 @@
 import {
     Box,
     Center,
-    Heading,
     ListItem,
     Text,
     Link,
@@ -17,26 +16,18 @@ import Layout from '../layouts/Layout'
 import Partners from '../components/Partners'
 import DetailedInstructions from '../components/DetailedInstructions'
 import Divider from '../components/Divider'
+import Hero from '../components/Hero'
 
 const Index = () => {
     return (
         <>
             <Layout>
-                <Center flexDirection="column" textAlign="center" mb="20">
-                    <Heading
-                        as="h1"
-                        fontSize={['30px', '40px', '50px', '60px']}
-                    >
-                        FutureVisions.earth
-                    </Heading>
-
-                    <Text mt="4" mb="4" fontSize={['lg', null, null, 'xl']}>
-                        Vilken framtid vill du leva i och hur gör vi för att nå
-                        dit?
-                    </Text>
-
-                    <PrimaryCTA />
-                </Center>
+                <Hero
+                    heading="FutureVisions.earth"
+                    text="Vilken framtid vill du leva i och hur gör vi för att nå
+                        dit?"
+                    cta={<PrimaryCTA />}
+                />
 
                 <Box maxW="4xl" mt="20" mx="auto">
                     <IntroSection

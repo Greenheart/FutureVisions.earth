@@ -39,7 +39,8 @@ const Header = () => (
 
         <Flex as="nav" fontWeight="bold" justifyContent="flex-start">
             <NavLink href="/about">Om oss</NavLink>
-            <NavLink href={'mailto:' + email}>Kontakt</NavLink>
+            <NavLink href="/inspiration">Inspiration</NavLink>
+            {/* <NavLink href={'mailto:' + email}>Kontakt</NavLink> */}
         </Flex>
     </Container>
 )

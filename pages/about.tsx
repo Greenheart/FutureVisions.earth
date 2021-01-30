@@ -1,14 +1,15 @@
-import { Heading, Link, Text, Center } from '@chakra-ui/react'
+import { Link, Text, Center } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import Image from 'next/image'
 
 import Layout from '../layouts/Layout'
 import PrimaryCTA from '../components/PrimaryCTA'
 import Partners from '../components/Partners'
-import Image from 'next/image'
+import Hero from '../components/Hero'
 
 const About = () => (
     <Layout maxW="xl" fontSize={[16, null, 20]}>
-        <Heading>Om oss</Heading>
+        <Hero heading="Om oss" />
         <Center>
             <Image
                 src="/images/undraw_new_ideas_jdea.svg"
