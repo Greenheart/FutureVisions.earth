@@ -5,7 +5,8 @@ import { Button, ButtonProps } from '@chakra-ui/react'
 import { formLink } from '../shared/constants'
 
 const PrimaryCTA: FC<ButtonProps> = ({ ...props }) => (
-    <NextLink href={formLink} passHref>
+    <>
+        {/* <NextLink href={formLink} passHref> */}
         <Button
             size="lg"
             mt="8"
@@ -15,6 +16,10 @@ const PrimaryCTA: FC<ButtonProps> = ({ ...props }) => (
             color="black"
             bg="#ffe156"
             transition="none"
+            _disabled={{
+                bg: '#FFD20A8f',
+                cursor: 'not-allowed',
+            }}
             _hover={{
                 bg: '#FFD20A',
             }}
@@ -24,11 +29,14 @@ const PrimaryCTA: FC<ButtonProps> = ({ ...props }) => (
             _active={{
                 bg: '#F5C800',
             }}
+            disabled
             {...props}
         >
-            Skicka in ditt bidrag!
+            {/* Skicka in ditt bidrag! */}
+            Snart: Läs bidragen
         </Button>
-    </NextLink>
+        {/* </NextLink> */}
+    </>
 )
 
 export default PrimaryCTA
