@@ -1,5 +1,8 @@
 import { FC } from 'react'
-import { Center, CenterProps, Heading, Text } from '@chakra-ui/react'
+import { Center, CenterProps, Heading, Text, Link } from '@chakra-ui/react'
+import NextLink from 'next/link'
+
+import { Volume_1_PDFs } from '../shared/constants'
 
 interface HeroProps extends CenterProps {
     heading: string
@@ -17,7 +20,16 @@ const Hero: FC<HeroProps> = ({ heading, text, cta }) => (
             {text}
         </Text>
 
-        {cta ? cta : null}
+        {cta ? (
+            <>
+                {cta}
+                <NextLink href={Volume_1_PDFs.highRes} passHref>
+                    <Link variant="white" mt="4" isExternal>
+                        Högupplöst version
+                    </Link>
+                </NextLink>
+            </>
+        ) : null}
     </Center>
 )
 
