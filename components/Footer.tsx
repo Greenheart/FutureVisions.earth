@@ -2,7 +2,7 @@ import { FC } from 'react'
 import NextLink from 'next/link'
 import { Flex, FlexProps, Link } from '@chakra-ui/react'
 
-import { email } from '../shared/constants'
+import { email, instagram } from '../shared/constants'
 
 const Footer: FC<FlexProps> = (props) => (
     <Flex
@@ -20,6 +20,10 @@ const Footer: FC<FlexProps> = (props) => (
                     Om oss
                 </Link>
             </NextLink>
+
+            <Link variant="yellow" href={instagram} p="4" isExternal>
+                Instagram
+            </Link>
 
             <Link variant="yellow" href={'mailto:' + email} p="4">
                 Kontakt

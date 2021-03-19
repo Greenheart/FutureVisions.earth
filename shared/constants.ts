@@ -6,3 +6,4 @@ export const Volume_1_PDFs = {
     lowRes:
         'https://drive.google.com/file/d/1int3WjqRShP7qbcsGxWFZ3G5FxP31XMo/view?usp=sharing',
 }
+export const instagram = 'https://www.instagram.com/futurevisions.earth/'
